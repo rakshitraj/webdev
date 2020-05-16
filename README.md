@@ -19,7 +19,7 @@ pip install flask
 ```
 
 ### Let's run our Flask server 
-Find the starter code on the [Flask homepage](https://flask.palletsprojects.com/en/1.1.x/). Paste that code into a new file called hello.py.
+Find the starter code on the [Flask homepage](https://flask.palletsprojects.com/en/1.1.x/). Paste that code into a new file called `hello.py`.
 
 ```python3
 from flask import Flask
@@ -35,4 +35,4 @@ This command will run your Python script and more or less turn your command line
 ```python3
 $ FLASK_APP=hello.py flask run
 ```
-To quit the server you'll need to press control-Z. 
+To quit the server you'll need to press `control-Z`. 
