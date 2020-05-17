@@ -138,3 +138,36 @@ def index():
 def about():
     return render_template('about.html')
 ```
+### Flask includes
+
+`includes` allows us to create reusable snippets of code and add to all pages where it is required.
+This helps us to easily maintain the pages and reduces chances of error while update pages
+
+#### 1. Create header and footer includes
+
+_index.html_
+```html
+{% include 'header.html' %}
+
+        <h1>Hello I'm HTLM</h1>
+
+{% include 'footer.html' %}
+```
+#### 2. Move the head of your HTML to header.html
+Create `templates/header.html`, and add header 
+```html
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <body>
+        <a href="/">Homepage</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+```
+#### 3. Move the foot of your HTML to footer.html
+Create `templates/footer.html`, and add footer 
+```html
+    </body>
+</html>
+```
