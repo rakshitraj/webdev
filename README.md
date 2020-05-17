@@ -44,11 +44,11 @@ $ export FLASK_ENV=development
 ```
 Alternatively you could also try
 ```bash
-$ export FLASK_ENV=1  // set environment to development , debug mode
+$ export FLASK_ENV=1  # set environment to development , debug mode
 ```
 To unset the debug mode
 ```bash
-$ export FLASK_ENV=1  // unset debug mode
+$ export FLASK_ENV=1  # unset debug mode
 ```
 If for some reason that didn't work, try adding these two lines to the bottom of your file: 
 ```python3
