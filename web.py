@@ -1,13 +1,13 @@
-# Rendering HTML Template
-# render-template method
+# WebApp
 from flask import Flask, render_template
 app = Flask(__name__)
 
+# Render Homepage
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# Render about page
+# Render About page
 @app.route("/about")
 def about():
     return render_template('about.html')

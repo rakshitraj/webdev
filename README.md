@@ -87,3 +87,54 @@ Now run the file using
 $ export FLASK_ENV=1            # set debug mode
 $ FLASK_APP=web.py flask run    # run the app
 ```
+
+### How to serve new pages in Flask
+Now that we have out 'Homepage' up and running, it is time to include and serve other pages in our web app.
+We are going to serve an 'About' page. To do this, we create a new `html` file in the `templates` folder called `about.html` which will contain somthing like 
+```html
+<html>
+    <head>
+        <title>About Page</title>
+    </head>
+    <body>
+        <h1>Hello, I am just chilling about!</h1>
+        <a href="/">Homepage</a>
+        <a href="/about">About</a>
+    </body>>
+        <a href="/about">About</a>
+</html>
+```
+These lines of code, will add navigational ablities by providing hyperlinks to the 'About' page and the 'Homepage'
+```html
+ <a href="/">Homepage</a>
+ <a href="/about">About</a>
+```
+Therefore, we copy these lines to `index.html` as well. In the future we will use an include-lines feature
+to includes certain parts of html across pages, since IRL projects will have way too many pages for copy-pasting html to be practical.
+
+##### Serving the page
+To seve the page we add the following lines to `web.py` to set a route to the about page.
+
+```python3
+# Render about page
+@app.route("/about")
+def about():
+    return render_template('about.html')
+```
+`web.py` now looks like
+
+```python3
+# WebApp
+from flask import Flask, render_template
+app = Flask(__name__)
+
+# Render Homepage
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+# Render About page
+@app.route("/about")
+def about():
+    return render_template('about.html')
+```
