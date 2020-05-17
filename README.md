@@ -59,7 +59,7 @@ Note: The first time you add this code you'll need to shut down the Flask server
 
 ### Rendering HTML Templates
 
-Create file `web.py` similar to `hello.py' and update the route file with the `render_template` method.
+Create file `web.py` similar to `hello.py` and update the route file with the `render_template` method.
 ```python3
 from flask import Flask, render_template
 app = Flask(__name__)
@@ -104,7 +104,7 @@ We are going to serve an 'About' page. To do this, we create a new `html` file i
         <a href="/about">About</a>
 </html>
 ```
-These lines of code, will add navigational ablities by providing hyperlinks to the 'About' page and the 'Homepage'
+These lines of code, will add navigational abilities by providing hyperlinks to the 'About' page and the 'Homepage'
 ```html
  <a href="/">Homepage</a>
  <a href="/about">About</a>
@@ -113,7 +113,7 @@ Therefore, we copy these lines to `index.html` as well. In the future we will us
 to includes certain parts of html across pages, since IRL projects will have way too many pages for copy-pasting html to be practical.
 
 ##### Serving the page
-To seve the page we add the following lines to `web.py` to set a route to the about page.
+To serve the page we add the following lines to `web.py` to set a route to the about page.
 
 ```python3
 # Render about page
