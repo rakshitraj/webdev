@@ -1,6 +1,6 @@
 # Web Development using Flask
 ## What is Flask?
-Flask is a light-weight framework with a built-in server that will allow us to turn our Python scripts into web pages and web apps. To say that another way, Flask allows us to make websites with Python. 
+Flask is a light-weight framework with a built-in server that will allow us to turn our Python scripts into web pages and web apps. Simply put, Flask allows us to make websites with Python. 
 
 ## Let's see if Flask is installed
 If you used Anaconda to install Python then you should have Flask installed already. 
@@ -90,8 +90,7 @@ $ FLASK_APP=web.py flask run    # run the app
 
 ## How to serve new pages in Flask
 
-Now that we have out 'Homepage' up and running, it is time to include and serve other pages in our web app.
-We are going to serve an 'About' page. To do this, we create a new `html` file in the `templates` folder called `about.html` which will contain something like 
+Now that we have out _Homepage_ up and running, it is time to include and serve other pages in our web app. We are going to serve an _About_ page. To do this, we create a new `html` file in the `templates` folder called `about.html` which will contain something like 
 
 ```html
 <html>
@@ -219,3 +218,22 @@ _header.html_
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
 ```
+
+## What else can I do using Flask
+
+Flask is a very handy in web development.  If you'd like to explore Flask and its applications further I recommend working on building a full-fledged website using Bootstrap and Heroku.
+
+- Flask — https://www.fullstackpython.com/flask.html
+- Bootstrap — https://getbootstrap.com/
+- Heroku — [https://www.heroku.com](https://www.heroku.com/)
+
+Bootstrap is a platform for designing responsive web pages. Heroku is a platform(PaaS) used to launch your websites on the internet.
+
+## References
+
+Check out the [GitHub repository](https://github.com/rakshitraj/webdev) and [Git Pages](rakshitraj.github.io/webdev) for this project. The repo contains further information on APIs.
+
+This project is based on [OneMonth](www.onemonth.com)'s tutorial (_highly recommended_) offered for free with the [Github Student Pack](education.github.com). Benefits from the pack also include a License to BOOTSTRAP STUDIO, a powerful desktop app for designing and prototyping websites.
+
+Thanks for reading!
+
