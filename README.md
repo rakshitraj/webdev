@@ -198,7 +198,7 @@ The `title` is passed to the render_template function. This parameter is receive
 ```html
 <title>{{title}}</title>
 ```
-### 2. Using `if`, `elif`, `else` and end as conditionals in your HTML
+### 2. Using `if`, `elif`, `else` and `endif` as conditionals in your HTML
 _header.html_
 ```html
 <html lang="en">
