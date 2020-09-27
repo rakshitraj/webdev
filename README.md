@@ -1,4 +1,4 @@
-# Web Development using Flask
+# Web Development using Flask for Medium
 ## What is Flask?
 Flask is a light-weight framework with a built-in server that will allow us to turn our Python scripts into web pages and web apps. Simply put, Flask allows us to make websites with Python. 
 
