@@ -18,6 +18,12 @@ But if you see "command not found?" then you'll want to visit the Flask homepage
 $ pip install flask 
 ```
 
+or 
+
+```bash
+$ pip3 install flask
+```
+
 ## Let's run our Flask server 
 Find the starter code on the [Flask homepage](https://flask.palletsprojects.com/en/1.1.x/). Paste that code into a new file called `hello.py`.
 
